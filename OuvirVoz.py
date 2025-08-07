@@ -10,7 +10,7 @@ with mic as fonte:
     audio = r.listen(fonte)
     print("Enviando para reconhecimento")
     try:
-     text = r.recognize_amazon(audio, lenguage = "pt-BR")
+     text = r.recognize_google(audio, lenguage = "pt-BR")
      print("Você disse: {}". format(text))
     except:
        ("Não Entendi o que você disse") 
